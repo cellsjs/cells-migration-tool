@@ -1,0 +1,10 @@
+{
+  "name": "migrate",
+  "description": "Move repositories recursively",
+  "isGenerator": true,
+  "params": {},
+  "steps": {
+    "checkSSH": {},
+    "migrate": {}
+  }
+}

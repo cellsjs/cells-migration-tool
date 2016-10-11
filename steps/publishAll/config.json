@@ -1,0 +1,50 @@
+{
+  "name": "publishAll",
+  "contexts": "*",
+  "description": "Check, publish and push all repositories",
+  "plugins" : [
+    "keyCache",
+    "bowerRegistry",
+    "npmRegistry"
+  ],
+  "commitMessage" : "(automatic) change dependencies to registry mode",
+  "registryProtocol" : "https",
+  "registryDomain" : "dev.devtools.yourcompany.com" ,
+  "registryDomainTarget" : "devtools.yourcompany.com" ,
+  "registryBase" : "artifactory/api",
+  "resolver" : "bower-art-resolver",
+  "stages" : [ "check", "run" ],
+  "registries" : {
+    "bower" : {
+      "registry": "bower/bower-repo"
+    },
+    "npm" : {
+      "registry" : "npm/npm-repo",
+      "auth" : "npm/auth"
+    }
+  },
+  "requirements": {
+    "bower-art-resolver" : {
+      "installer" : "npm",
+      "listedIn": "npm",
+      "uri": "bower-art-resolver"
+    },
+    "curl": {},
+    "git": {},
+    "bower": {}
+  },
+  "promptsKey": [
+    {
+      "type": "input",
+      "name": "email",
+      "required": true,
+      "message": "Introduce your email without '@yourcompany.com'"
+    },
+    {
+      "type": "input",
+      "name": "apikey",
+      "required": true,
+      "message": "Introduce your artifactory API KEY"
+    }
+  ]
+}

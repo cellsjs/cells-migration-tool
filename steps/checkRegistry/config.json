@@ -1,0 +1,54 @@
+{
+  "name": "checkRegistry",
+  "contexts": "*",
+  "description": "Check if registry configuration is correct",
+  "plugins" : [
+    "keyCache",
+    "bowerRegistry",
+    "npmRegistry"
+  ],
+  "commitMessage" : "(automatic) change dependencies to registry mode",
+  "registryProtocol" : "https",
+  "registryDomain" : "devtools.yourcompany.com" ,
+  "registryBase" : "artifactory/api",
+  "resolver" : "bower-art-resolver",
+  "stages" : [ "check" ],
+  "registries" : {
+    "bower" : {
+      "registry": "bower/bower-repo"
+    },
+    "npm" : {
+      "registry" : "npm/npm-repo",
+      "auth" : "npm/auth"
+    }
+  },
+  "requirements": {
+    "bower-art-resolver" : {
+      "installer" : "npm",
+      "listedIn": "npm"
+    },
+    "curl": {},
+    "git": {},
+    "bower": {}
+  },
+  "promptsKey": [
+    {
+      "type": "input",
+      "name": "email",
+      "required": true,
+      "message": "Introduce your email without '@yourcompany.com'"
+    },
+    {
+      "type": "input",
+      "name": "yourdomain",
+      "required": true,
+      "message": "Introduce your domain '@yourcompany.com'"
+    },
+    {
+      "type": "input",
+      "name": "apikey",
+      "required": true,
+      "message": "Introduce your artifactory API KEY"
+    }
+  ]
+}

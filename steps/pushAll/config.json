@@ -1,0 +1,9 @@
+{
+  "name": "pushAll",
+  "contexts": "*",
+  "description": "Distribute one file to all repos",
+  "plugins": ["gitRepos"],
+  "branches" : ["master", "develop"],
+  "comment" : "chore(): Add file to repository",
+  "pushFile": ""
+}

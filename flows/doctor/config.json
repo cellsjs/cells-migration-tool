@@ -1,0 +1,10 @@
+{
+  "name": "doctor",
+  "description": "Checks the SSH and registry configurations",
+  "isGenerator": true,
+  "params": {},
+  "steps": {
+    "checkSSH": {},
+    "checkRegistry": {}
+  }
+}

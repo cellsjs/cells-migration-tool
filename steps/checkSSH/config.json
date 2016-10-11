@@ -1,0 +1,12 @@
+{
+  "name": "checkSSH",
+  "contexts": "*",
+  "description": "Check if SSH is configurated correctly",
+  "generateSSHdocUrl" : "https://confluence.atlassian.com/bitbucketserver046/using-bitbucket-server/controlling-access-to-code/using-ssh-keys-to-secure-git-operations/creating-ssh-keys?utm_campaign=in-app-help&utm_medium=in-app-help&utm_source=stash#CreatingSSHkeys-CreatinganSSHkeyonLinux&MacOSX",
+  "bitBucketUrl" : "https://devtools.yourcompany.com/bitbucket/projects",
+  "testRepoName": "cells-eslintrc",
+  "testRepo": "ssh://git@devtools.yourcompany.com:7999/ctool/cells-eslintrc.git",
+  "requirements": {
+    "git": {}
+  }
+}
