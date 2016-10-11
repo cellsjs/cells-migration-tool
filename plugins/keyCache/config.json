@@ -1,0 +1,7 @@
+{
+  "name": "keyCache",
+  "description": "Cache for prompts params",
+  "plugins": [
+    "fsutils"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cells-migration-friend",
+  "version": "0.2.1",
+  "description": "migration asistant tool",
+  "main": "bin/pisco.js",
+  "scripts": {
+    "deps": "npm install",
+    "postinstall": "node bin/pisco.js -w"
+  },
+  "keywords": [
+    "piscosour-recipe"
+  ],
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "migra-cells": "bin/pisco.js"
+  },
+  "dependencies": {
+    "piscosour": "^1.0.0-alpha.8",
+    "rimraf": "^2.5.4",
+    "fs-extra": "^0.30.0",
+    "semver": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

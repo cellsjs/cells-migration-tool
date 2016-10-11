@@ -1,0 +1,9 @@
+{
+  "name": "migrate",
+  "contexts": "*",
+  "description": "Change git origin to all projects recursively",
+  "fromRepo": "descinet.yourcompany.es/stash/scm",
+  "toRepo":  "devtools.yourcompany.com:7999",
+  "sshInit": "ssh://git@",
+  "plugins": ["gitRepos"]
+}
