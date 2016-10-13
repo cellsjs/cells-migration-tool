@@ -79,8 +79,10 @@ module.exports = {
         command = `curl -u${this.params.email}:${this.params.apikey} ${this.params.registryProtocol}://${this.params.registryDomain}/${this.params.registryBase}/${this.params.registries.npm.auth} --insecure`;
         const curl = this.sh(command);
         if (curl.status === 0) {
-          if (this.params.registryDomain.indexOf('dev.') >= 0) {
-            this.sh(`npm config set cafile ${__dirname}/yourcompany_test_ca_not_trust.ca`, null, true);
+          if (this.params.registryCa && this.params.registryCa.length > 0) {
+            const catfile = path.join(__dirname, 'ca_not_trust.ca');
+            fs.writeFileSync(catfile, this.params.registryCa);
+            this.sh(`npm config set cafile ${catfile}`, null, true);
           } else {
             this.sh('npm config delete cafile', null, true);
           }
