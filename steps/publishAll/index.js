@@ -98,6 +98,7 @@ module.exports = {
     this.params.prePublishedRepos = this.publishAll(this.params.repos);
     this.params.preCheckedRepos = this.checkAll(this.params.prePublishedRepos);
     this.params.registryDomain = this.params.registryDomainTarget;
+    delete this.params.registryCa;
   },
 
   run: function() {
