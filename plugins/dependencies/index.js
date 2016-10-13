@@ -45,7 +45,8 @@ module.exports = {
           if (model[type]) {
             Object.getOwnPropertyNames(model[type]).forEach((name) => {
               let dependency = model[type][name];
-              if (dependency.indexOf(this.params.repoDomain) >= 0) {
+              const repoDomain = this.params.fromRepo.split('/')[0];
+              if (dependency.indexOf(repoDomain) >= 0) {
                 hasChanged = true;
                 model[type][name] = this._chDependency(dependency, this.params.toVersions);
                 this.logger.info('#cyan', name, ':', model[type][name], '#green', 'OK');
