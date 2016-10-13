@@ -23,7 +23,7 @@ En el raíz de donde tengas todos los repositorios git ejecuta:
     
    - Puedes mezclar repositorios que ya existan en bitbucket con los que no existan la herramienta es suficientemente lista como para comprobarlo y solo cambiar los que existan. *puedes ejecutarlo en projects/components sin problemas*
    - Recorrerá todos los directorios recursivamente detectando repositorios git y cambiando el origin a bitbucket.
-   - Comprobará que el repositorio existe en bitbucket: Si no existe preguntará para generarlo automáticamente y copiar el contenido en el nuevo repositorio.
+   - Comprobará que el repositorio existe en bitbucket: Si no existe preguntará para generarlo manualmente y copiar el contenido en el nuevo repositorio.
  
 ```
   Manually create repository ${repoName},
