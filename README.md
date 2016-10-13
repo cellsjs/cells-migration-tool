@@ -4,7 +4,7 @@ Utilidad para automatizar varias tareas que vamos a tener que hacer todos nosotr
 
 ## (1) Instalación:
 
-    npm install -g git+https://descinet.yourcompany.es/stash/scm/ctool/cells-migration-friend.git
+    npm install -g cells-migration-tool
 
 ## (2) Doctor (diagnostica tu sistema)
 
