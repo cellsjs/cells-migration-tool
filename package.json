@@ -13,7 +13,7 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "migra-cells": "bin/pisco.js"
+    "migra-tool": "bin/pisco.js"
   },
   "dependencies": {
     "piscosour": "^1.0.0-alpha.8",
