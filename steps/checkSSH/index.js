@@ -38,7 +38,7 @@ module.exports = {
   },
 
   cleanTest() {
-    const repoName = this.params.repoTest.match(/\/([^\/]*?)\.git/)[1];
+    const repoName = this.params.testRepo.match(/\/([^\/]*?)\.git/)[1];
     if (this.fsExists(repoName)) {
       rimraf.sync(repoName);
     }
