@@ -1,9 +1,0 @@
-{
-  "name": "pushFileAll",
-  "description": "Add one file to all repos",
-  "isGenerator": true,
-  "steps": {
-    "checkSSH": {},
-    "pushAll": {}
-  }
-}
