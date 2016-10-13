@@ -13,7 +13,7 @@ module.exports = {
     const file = path.join(dir, 'config');
     if (this.fsExists(pushFile) && this.fsExists(file) && file.indexOf('node_modules') < 0) {
       process.chdir(dir.replace('.git', ''));
-      this.logger.info('Distributing jenkins file to', '#green', dir);
+      this.logger.info('Distributing', '#cyan', pushFile, 'to', '#green', dir);
       this.params.branches.forEach((branch) => {
         this.sh('git pull ', null, true);
         this.sh(`git checkout ${branch}`, null, true);
