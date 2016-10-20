@@ -1,6 +1,7 @@
 {
   "name": "migrate",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Change git origin to all projects recursively",
   "fromRepo": "descinet.yourcompany.es/stash/scm",
   "toRepo":  "devtools.yourcompany.com:7999",

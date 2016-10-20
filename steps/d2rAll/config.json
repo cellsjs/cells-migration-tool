@@ -1,6 +1,7 @@
 {
   "name": "d2rAll",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Change recursively dependencies to registry mode",
   "dependencyFiles" : [ "bower.json" , "package.json"],
   "fromRepo": "descinet.yourcompany.es/stash/scm",

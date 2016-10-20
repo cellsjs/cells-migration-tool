@@ -1,6 +1,7 @@
 {
   "name": "checkRegistry",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Check if registry configuration is correct",
   "plugins" : [
     "keyCache",

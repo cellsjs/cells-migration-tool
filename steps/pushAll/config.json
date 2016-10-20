@@ -1,6 +1,7 @@
 {
   "name": "pushAll",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Distribute one file to all repos",
   "plugins": ["gitRepos"],
   "branches" : ["master", "develop"],

@@ -1,6 +1,7 @@
 {
   "name": "publishAll",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Check, publish and push all repositories",
   "plugins" : [
     "keyCache",

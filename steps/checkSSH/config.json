@@ -1,6 +1,7 @@
 {
   "name": "checkSSH",
-  "contexts": "*",
+  "contexts": [ "environment" ],
+  "isGenerator": true,
   "description": "Check if SSH is configurated correctly",
   "generateSSHdocUrl" : "https://confluence.atlassian.com/bitbucketserver046/using-bitbucket-server/controlling-access-to-code/using-ssh-keys-to-secure-git-operations/creating-ssh-keys?utm_campaign=in-app-help&utm_medium=in-app-help&utm_source=stash#CreatingSSHkeys-CreatinganSSHkeyonLinux&MacOSX",
   "bitBucketUrl" : "https://devtools.yourcompany.com/bitbucket/projects",
