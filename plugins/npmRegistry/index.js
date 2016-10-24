@@ -93,6 +93,8 @@ module.exports = {
           this.sh(`npm config set email ${this.params.email}@${this.params.yourdomain}`, null, true);
           this.logger.trace('#cyan', 'npm', 'registry configured', '#green', 'OK');
           return Promise.resolve();
+        } else {
+          this.logger.error('command:', command, '#red', 'ERROR:', curl.stdout.toString(), curl.stderr.toString());
         }
       }
       return Promise.reject(`Error executing ${command}...`);
