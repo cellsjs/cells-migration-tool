@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "migration asistant tool",
   "main": "bin/pisco.js",
   "scripts": {
