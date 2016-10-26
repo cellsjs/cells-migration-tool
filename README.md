@@ -128,6 +128,14 @@ En el raíz de donde tengas todos los repositorios git con proyectos bower o npm
 
     migra-cells all::publishAll
 
+##(8) Subir un directorio o fichero a multiples repositorios (haciendo commit y push)
+
+En el raíz de donde tengas todos los repositorios git ejecuta:
+
+    migra-cells environment:pushFileAll --pushFile ${pathtofileordir} --comment "chore(): add this file or dir to all"
+
+donde pathtofileordir es la ruta al fichero o directorio que quieres subir a todos los repositorios.
+
 # Main Index:
 
 - User Commands
