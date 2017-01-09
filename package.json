@@ -23,7 +23,7 @@
     "semver": "^5.3.0"
   },
   "devDependencies": {
-    "piscosour": "^1.0.0-alpha.8",
+    "piscosour": "^1.0.0-alpha.8"
   },
   "engines": {
     "node": ">=4.0.0"
