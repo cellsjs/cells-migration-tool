@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "migration asistant tool",
   "main": "bin/pisco.js",
   "scripts": {
@@ -16,10 +16,14 @@
     "migra-tool": "bin/pisco.js"
   },
   "dependencies": {
-    "piscosour": "^1.0.0-alpha.8",
+    "pisco-plugin-bower": "^0.3.6",
+    "pisco-plugin-npm": "^0.1.2",
     "rimraf": "^2.5.4",
     "fs-extra": "^0.30.0",
     "semver": "^5.3.0"
+  },
+  "devDependencies": {
+    "piscosour": "^1.0.0-alpha.8",
   },
   "engines": {
     "node": ">=4.0.0"
