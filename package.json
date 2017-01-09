@@ -1,20 +1,15 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "migration asistant tool",
-  "main": "bin/pisco.js",
   "scripts": {
-    "deps": "npm install",
-    "postinstall": "node bin/pisco.js -w"
+    "deps": "npm install"
   },
   "keywords": [
     "piscosour-recipe"
   ],
   "license": "ISC",
   "preferGlobal": true,
-  "bin": {
-    "migra-tool": "bin/pisco.js"
-  },
   "dependencies": {
     "pisco-plugin-bower": "^0.3.6",
     "pisco-plugin-npm": "^0.1.2",
