@@ -29,8 +29,8 @@
     }
   },
   "configFiles": {
-    ".gradle/gradle.properties": "artifactory_user=${this.params.email}\nartifactory_password=${this.params.apikey}",
-    ".netrc": "machine globaldevtools.bbva.com\nlogin ${this.params.email}\npassword ${this.params.apikey}"
+    ".gradle/gradle.properties": "artifactory_user=${this.params.email}\nartifactory_password=${this.params.apikey}\n#${this.params.registryDomain}",
+    ".netrc": "machine ${this.params.registryDomain}\nlogin ${this.params.email}\npassword ${this.params.apikey}"
   },
   "requirements": {
     "bower-art-resolver": {
