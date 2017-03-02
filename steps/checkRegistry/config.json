@@ -1,31 +1,40 @@
 {
   "name": "checkRegistry",
-  "contexts": [ "environment" ],
+  "contexts": [
+    "environment"
+  ],
   "isGenerator": true,
   "description": "Check if registry configuration is correct",
-  "plugins" : [
+  "plugins": [
     "keyCache",
     "bowerRegistry",
-    "npmRegistry"
+    "npmRegistry",
+    "configWriter"
   ],
-  "commitMessage" : "(automatic) change dependencies to registry mode",
-  "registryProtocol" : "https",
-  "registryDomain" : "devtools.yourcompany.com" ,
-  "registryBase" : "artifactory/api",
-  "resolver" : "bower-art-resolver",
-  "stages" : [ "check" ],
-  "registries" : {
-    "bower" : {
+  "commitMessage": "(automatic) change dependencies to registry mode",
+  "registryProtocol": "https",
+  "registryDomain": "devtools.yourcompany.com",
+  "registryBase": "artifactory/api",
+  "resolver": "bower-art-resolver",
+  "stages": [
+    "check"
+  ],
+  "registries": {
+    "bower": {
       "registry": "bower/bower-repo"
     },
-    "npm" : {
-      "registry" : "npm/npm-repo",
-      "auth" : "npm/auth"
+    "npm": {
+      "registry": "npm/npm-repo",
+      "auth": "npm/auth"
     }
   },
+  "configFiles": {
+    ".gradle/gradle.properties": "artifactory_user=${this.params.email}\nartifactory_password=${this.params.apikey}",
+    ".netrc": "machine globaldevtools.bbva.com\nlogin ${this.params.email}\npassword ${this.params.apikey}"
+  },
   "requirements": {
-    "bower-art-resolver" : {
-      "installer" : "npm",
+    "bower-art-resolver": {
+      "installer": "npm",
       "listedIn": "npm"
     },
     "curl": {},
