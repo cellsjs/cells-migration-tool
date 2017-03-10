@@ -1,4 +1,3 @@
 {
-  "cmd" : "migra-tool",
-  "repoTypes" : []
+  "cmd" : "migra-tool"
 }
