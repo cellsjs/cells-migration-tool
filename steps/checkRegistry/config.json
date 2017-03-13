@@ -44,21 +44,22 @@
   "promptsKey": [
     {
       "type": "input",
+      "name": "apikey",
+      "required": true,
+      "message": "Introduce your artifactory API KEY"
+    },
+    {
+      "type": "input",
       "name": "email",
       "required": true,
-      "message": "Introduce your email without '@yourcompany.com'"
+      "message": "Introduce your email (without @yourcompany.com)",
+      "filter": "#checkEmail"
     },
     {
       "type": "input",
       "name": "yourdomain",
       "required": true,
       "message": "Introduce your domain '@yourcompany.com'"
-    },
-    {
-      "type": "input",
-      "name": "apikey",
-      "required": true,
-      "message": "Introduce your artifactory API KEY"
     }
   ]
 }
