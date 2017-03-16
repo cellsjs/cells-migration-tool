@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 
 module.exports = {
@@ -17,6 +17,7 @@ module.exports = {
       if (this.params.configFiles) {
         Object.getOwnPropertyNames(this.params.configFiles).forEach((file) => {
           const filePath = path.join(process.env.HOME, file);
+          fs.ensureFileSync(filePath);
           let content = this.fsReadFile(filePath);
           if (content.indexOf(this.params.registryDomain) >= 0) {
             this.logger.info('file', '#cyan', filePath, 'is already configured!');
