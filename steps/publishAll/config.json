@@ -27,8 +27,7 @@
   "requirements": {
     "bower-art-resolver" : {
       "installer" : "npm",
-      "listedIn": "npm",
-      "uri": "bower-art-resolver"
+      "listedIn": "npm"
     },
     "curl": {},
     "git": {},
