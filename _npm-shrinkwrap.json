@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "dependencies": {
     "fs-extra": {
       "version": "0.30.0",
