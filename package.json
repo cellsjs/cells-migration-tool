@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.13-rc.0",
+  "version": "0.1.13",
   "description": "migration asistant tool",
   "scripts": {
     "deps": "npm install"
