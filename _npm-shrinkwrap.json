@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "dependencies": {
     "fs-extra": {
       "version": "0.30.0",
@@ -106,8 +106,9 @@
       }
     },
     "pisco-plugin-npm": {
-      "version": "0.1.5",
-      "from": "pisco-plugin-npm@0.1.5"
+      "version": "0.3.3",
+      "from": "pisco-plugin-npm@0.3.3",
+      "resolved": "https://globaldevtools.bbva.com/artifactory/api/npm/npm-repo/pisco-plugin-npm/-/pisco-plugin-npm-0.3.3.tgz"
     },
     "rimraf": {
       "version": "2.6.1",
