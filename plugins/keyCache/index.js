@@ -14,7 +14,7 @@ module.exports = {
         this.params.apikey = this.params[this.params.registryDomain].apikey;
       } else {
         this.params.email = this.params.apikey = undefined;
-        this.logger.txt(`\n\n  Go to https://${this.params.registryDomain}/artifactory/webapp/#/profile to get your API KEY\n\n`);
+        this.logger.framed(`\n\n  Go to https://${this.params.registryDomain}/artifactory/webapp/#/profile to get your API KEY\n\n`);
       }
     },
     _setCacheKeys() {
