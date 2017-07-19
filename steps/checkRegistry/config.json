@@ -29,7 +29,7 @@
     }
   },
   "configFiles": {
-    ".gradle/gradle.properties": "artifactory_user=${this.params.email}\nartifactory_password=${this.params.apikey}\n#${this.params.registryDomain}",
+    ".gradle/gradle.properties": "artifactory_user=${this.params.email}\nartifactory_password=${this.params.apikey}\n#${this.params.registryDomain}\nartifactory_url=https://globaldevtools.bbva.com/artifactory-api/cells-native",
     ".netrc": "machine ${this.params.registryDomain}\nlogin ${this.params.email}\npassword ${this.params.apikey}"
   },
   "requirements": {
