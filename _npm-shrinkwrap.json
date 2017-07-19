@@ -1,6 +1,6 @@
 {
   "name": "cells-migration-tool",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "dependencies": {
     "balanced-match": {
       "version": "1.0.0",
